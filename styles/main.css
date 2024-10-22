@@ -1,0 +1,66 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  body {
+    background: #f0f0f0;
+    color: #141414;
+    font-family: 'Helvetica', sans-serif;
+    margin: 4rem;
+    /* note, this margin will NOT work for all page layouts */
+  }
+  
+  /*  the #container div (below) holds ONE chart  */
+  #container1, #container2 {
+    width: 75%;
+    height: 400px;
+  }
+
+  #box1, #box2 {
+    border-style: solid;
+    border-width: thin;
+    border-radius: 1em;
+    border-color: #141414;
+
+    margin: 2rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  
+  p {
+    line-height: 1.5;
+  }
+  
+  /* link styles */
+  a {
+    color: #3f459b;
+  }
+  
+  a:hover {
+    color: #8087e8;
+  }
+  
+  /* media queries below - CHANGE if needed so your chart works well on phones */
+  @media screen and (max-width: 700px) {
+    body {
+      margin: 1.25rem;
+    }
+  
+    #container1, #container2 {
+      width: 100%;
+    }
+
+    #box1, #box2 {
+        margin: 1rem;
+        padding: 0.5rem;
+    }
+  }
+  
