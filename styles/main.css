@@ -12,11 +12,8 @@ html {
     color: #141414;
     font-family: 'Helvetica', sans-serif;
     margin: 4rem;
-    /* note, this margin will NOT work for all page layouts */
-  }
-
-  article {
     padding: 0rem 8rem;
+    /* note, this margin will NOT work for all page layouts */
   }
   
   /*  the #container div (below) holds ONE chart  */
@@ -56,6 +53,7 @@ html {
   @media screen and (max-width: 800px) {
     body {
       margin: 1.25rem;
+      padding: 0rem;
     }
   
     #container1, #container2 {
@@ -65,10 +63,6 @@ html {
     #box1, #box2 {
         margin: 1rem;
         padding: 0.5rem;
-    }
-
-    article {
-      padding: 0rem;
     }
   }
   
