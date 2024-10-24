@@ -1,41 +1,37 @@
 // Data retrieved from https://data.worldbank.org/indicator/SP.POP.TOTL?end=2023&start=2013&view=chart
 Highcharts.chart('container1', {
-    chart: {
-        type: 'area'
-    },
+
     title: {
         text: 'Top 3 Largest Countries by Population from 2013 to 2023'
     },
-    xAxis: {
-        allowDecimals: false,
-        accessibility: {
-            rangeDescription: 'Range: 2013 to 2023.'
-        }
-    },
+    
     yAxis: {
         title: {
             text: 'Population Size'
         }
     },
-    tooltip: {
-        pointFormat: '{series.name} had a population of <b>{point.y:,.0f}</b><br/>' +
-            ' in {point.x}'
-    },
-    plotOptions: {
-        area: {
-            pointStart: 2013,
-            marker: {
-                enabled: false,
-                symbol: 'circle',
-                radius: 2,
-                states: {
-                    hover: {
-                        enabled: true
-                    }
-                }
-            }
+
+    xAxis: {
+        accessibility: {
+            rangeDescription: 'Range: 2013 to 2023'
         }
     },
+
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+    plotOptions: {
+        series: {
+            label: {
+                connectorAllowed: false
+            },
+            pointStart: 2013
+        }
+    },
+
     series: [{
         name: 'China',
         data: [
@@ -51,9 +47,24 @@ Highcharts.chart('container1', {
         data: [
             316059947, 318386529, 320738994, 323071755, 325122128, 326838199, 328329953, 331526933, 332048977, 333271411, 334914895
         ]
-    }]
-});
+    }],
 
+    responsive: {
+        rules: [{
+            condition: {
+                maxWidth: 500
+            },
+            chartOptions: {
+                legend: {
+                    layout: 'horizontal',
+                    align: 'center',
+                    verticalAlign: 'bottom'
+                }
+            }
+        }]
+    }
+
+});
 //Data retrieved from https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2023&start=2013
 Highcharts.chart('container2', {
     chart: {

@@ -14,6 +14,10 @@ html {
     margin: 4rem;
     /* note, this margin will NOT work for all page layouts */
   }
+
+  article {
+    padding: 0rem 8rem;
+  }
   
   /*  the #container div (below) holds ONE chart  */
   #container1, #container2 {
@@ -49,7 +53,7 @@ html {
   }
   
   /* media queries below - CHANGE if needed so your chart works well on phones */
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     body {
       margin: 1.25rem;
     }
@@ -61,6 +65,10 @@ html {
     #box1, #box2 {
         margin: 1rem;
         padding: 0.5rem;
+    }
+
+    article {
+      padding: 0rem;
     }
   }
   
