@@ -48,23 +48,8 @@ Highcharts.chart('container1', {
             316059947, 318386529, 320738994, 323071755, 325122128, 326838199, 328329953, 331526933, 332048977, 333271411, 334914895
         ]
     }],
-
-    responsive: {
-        rules: [{
-            condition: {
-                maxWidth: 500
-            },
-            chartOptions: {
-                legend: {
-                    layout: 'horizontal',
-                    align: 'center',
-                    verticalAlign: 'bottom'
-                }
-            }
-        }]
-    }
-
 });
+
 //Data retrieved from https://data.worldbank.org/indicator/SL.UEM.TOTL.ZS?end=2023&start=2013
 Highcharts.chart('container2', {
     chart: {
