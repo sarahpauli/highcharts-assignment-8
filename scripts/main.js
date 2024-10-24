@@ -60,7 +60,7 @@ Highcharts.chart('container2', {
         type: 'column'
     },
     title: {
-        text: 'Top 3 Largest Countries by Population Employment Rates from 2013 to 2023 (% of Total Labor Force)',
+        text: 'Top 3 Largest Countries by Population Unemployment Rates from 2013 to 2023 (% of Total Labor Force)',
     },
     xAxis: {
         categories: ['2013', '2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023'],
